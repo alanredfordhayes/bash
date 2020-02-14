@@ -3,9 +3,10 @@
 
 if [ -z "$1" ]
 then
-INPUT=$1
-else
+echo "No input at commandline."
 INPUT="test-server-01"
+else
+INPUT=$1
 fi
 
 
