@@ -1,7 +1,12 @@
 #/bin/bash
 
 
-if [ "$null" -ne $1 ]
+if [ -z $1 ]
 then
 INPUT=$1
+else
+INPUT="test-server-01"
 fi
+
+
+echo $INPUT
