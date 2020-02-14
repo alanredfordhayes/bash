@@ -1,7 +1,7 @@
 #/bin/bash
 
 
-if [ -z $1 ]
+if [ -z "$1" ]
 then
 INPUT=$1
 else
