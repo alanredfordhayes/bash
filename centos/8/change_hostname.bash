@@ -22,5 +22,7 @@ echo "Current hostname: $CURRENT_HOSTNAME"
 else
 echo "Current hostname does not match the input value."
 echo "Current hostname: $CURRENT_HOSTNAME"
-echo "New hostname: $INPUT1"
+echo "Setting new hostname: $INPUT1"
+hostnamectl set-hostname $INPUT1
+echo "Hostname set to: $INPUT1"
 fi
