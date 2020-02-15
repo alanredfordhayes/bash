@@ -2,6 +2,7 @@
 
 
 $CURRENT_HOSTNAME="$(cat /etc/hostname)"
+echo $CURRENT_HOSTNAME
 
 
 if [ -z "$1" ]
