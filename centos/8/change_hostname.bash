@@ -1,7 +1,7 @@
 #/bin/bash
 
 
-$CURRENT_HOSTNAME=$(cat /etc/hostname)
+$CURRENT_HOSTNAME=$(hostname)
 echo $CURRENT_HOSTNAME
 
 
@@ -14,7 +14,7 @@ INPUT1=$1
 fi
 
 
-if [ "$CURRENT_HOSTNAME" -eq "$INPUT1"]
+if [ "$CURRENT_HOSTNAME" -eq "$INPUT1" ]
 then
 echo "Current hostname matches the input value."
 else
