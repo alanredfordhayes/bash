@@ -1,7 +1,7 @@
 #/bin/bash
 
 
-$CURRENT_HOSTNAME="$(hostname)"
+$CURRENT_HOSTNAME="$(cat /etc/hostname)"
 
 
 if [ -z "$1" ]
