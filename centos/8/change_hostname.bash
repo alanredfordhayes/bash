@@ -1,13 +1,21 @@
 #/bin/bash
 
 
+$CURRENT_HOSTNAME=$(hostname)
+
+
 if [ -z "$1" ]
 then
-INPUT="test-server-01"
+INPUT1="test-server-01"
 echo "No input at commandline. Hence, server will be named the following: $INPUT" 
 else
-INPUT=$1
+INPUT1=$1
 fi
 
 
-echo $INPUT
+if [ "$CURRENT_HOSTNAME" -eq "$INPUT1"]
+then
+echo "Current hostname matches the input value."
+else
+echo "Current hostname does not match the input value."
+fi
