@@ -1,7 +1,7 @@
 #/bin/bash
 
 
-$CURRENT_HOSTNAME="$(cat /etc/hostname)"
+$CURRENT_HOSTNAME=$(cat /etc/hostname)
 echo $CURRENT_HOSTNAME
 
 
