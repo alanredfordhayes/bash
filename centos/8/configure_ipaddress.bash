@@ -1,5 +1,5 @@
 #!/bin/bash
 
 
-IPADDR=$(ip addr)
+IPADDR=$(ip address | grep "^[0-9]:")
 echo $IPADDR
