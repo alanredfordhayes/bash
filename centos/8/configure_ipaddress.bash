@@ -21,6 +21,8 @@ do
 
 done
 
+echo ${#INTERFACES_ARRAY[@]}
+echo ${#NETWORK_INTERFACES_ARRAY[@]}
 if [ "${#INTERFACES_ARRAY[@]}" -lt "${#NETWORK_INTERFACES_ARRAY[@]}" ]
 then
     for IFACE in "${INTERFACES_ARRAY[@]}"
