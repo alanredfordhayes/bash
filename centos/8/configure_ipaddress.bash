@@ -22,13 +22,7 @@ do
 done
 
 echo ${#INTERFACES_ARRAY[@]}
-echo ${#NETWORK_INTERFACES_ARRAY[@]}
-if [ "${#INTERFACES_ARRAY[@]}" -ne "${#NETWORK_INTERFACES_ARRAY[@]}" ]
-then
-    echo ${#INTERFACES_ARRAY[@]}
-
-    for INTERFACE in "${INTERFACES_ARRAY[@]}"
-    do
-        echo $INTERFACE
-    done
+if [ 1 -eq  ${#INTERFACES_ARRAY[@]} ]
+then 
+    ip address show dev $INTERFACES_ARRAY
 fi
