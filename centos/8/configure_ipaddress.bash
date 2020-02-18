@@ -18,7 +18,7 @@ do
     else
     IFACE=$(echo $INTERFACE | sed "s/://g")
     echo $IFACE
-    ip address show device $IFACE
+    ip address show dev $IFACE
     fi
 
 done
