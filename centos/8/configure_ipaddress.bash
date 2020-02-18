@@ -15,10 +15,8 @@ do
     if [ "$INTERFACE" == "lo:" ]
     then
     echo "Loopback detected"
-    INTERFACES_ARRAY=$("${NETWORK_INTERFACES_ARRAY[@]/$INTERFACE}")
-    echo "Loopback deleted from array"
+    else
+    ip address show device $INTERFACE
     fi
 
 done
-
-echo ${INTERFACES_ARRAY[@]}
