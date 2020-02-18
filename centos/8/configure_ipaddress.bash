@@ -22,4 +22,4 @@ do
 done
 
 
-echo ${#NETWORK_INTERFACES_ARRAY}
+echo ${#NETWORK_INTERFACES_ARRAY[@]}
