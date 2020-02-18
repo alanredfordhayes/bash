@@ -15,7 +15,7 @@ do
     if [ "$INTERFACE" == "lo:" ]
     then
     echo "Loopback detected"
-    NETWORK_INTERFACES_ARRAY=( "${NETWORK_INTERFACES_ARRAY[@]/$INTERFACE}" )
+    NETWORK_INTERFACES_ARRAY=$("${NETWORK_INTERFACES_ARRAY[@]/$INTERFACE}")
     echo "Loopback deleted from array"
     fi
 
