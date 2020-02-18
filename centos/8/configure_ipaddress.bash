@@ -26,9 +26,9 @@ echo ${#NETWORK_INTERFACES_ARRAY[@]}
 if [ "${#INTERFACES_ARRAY[@]}" -ne "${#NETWORK_INTERFACES_ARRAY[@]}" ]
 then
     echo ${#INTERFACES_ARRAY[@]}
-     
-    for IFACE in "${INTERFACES_ARRAY[@]}"
+
+    for INTERFACE in "${INTERFACES_ARRAY[@]}"
     do
-        echo $IFACE
+        echo $INTERFACE
     done
 fi
