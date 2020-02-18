@@ -23,8 +23,10 @@ done
 
 echo ${#INTERFACES_ARRAY[@]}
 echo ${#NETWORK_INTERFACES_ARRAY[@]}
-if [ "${#INTERFACES_ARRAY[@]}" -lt "${#NETWORK_INTERFACES_ARRAY[@]}" ]
+if [ "${#INTERFACES_ARRAY[@]}" -ne "${#NETWORK_INTERFACES_ARRAY[@]}" ]
 then
+    echo ${#INTERFACES_ARRAY[@]}
+     
     for IFACE in "${INTERFACES_ARRAY[@]}"
     do
         echo $IFACE
