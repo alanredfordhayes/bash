@@ -21,8 +21,4 @@ do
 
 done
 
-echo ${#INTERFACES_ARRAY[@]}
-if [ 1 -eq  ${#INTERFACES_ARRAY[@]} ]
-then 
-    echo ${INTERFACES_ARRAY[@]}
-fi
+echo ${INTERFACES_ARRAY[@]}
