@@ -16,7 +16,9 @@ do
     then
     echo "Loopback detected"
     else
-    ip address show device $INTERFACE
+    IFACE=$(echo $INTERFACE | sed "s//:/g")
+    echo $IFACE
+    ip address show device $FACE
     fi
 
 done
