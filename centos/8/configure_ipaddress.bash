@@ -18,5 +18,8 @@ do
     NETWORK_INTERFACES_ARRAY=( "${NETWORK_INTERFACES_ARRAY[@]/$INTERFACE}" )
     echo "Loopback deleted from array"
     fi
-    
+
 done
+
+
+echo ${#NETWORK_INTERFACES_ARRAY}
