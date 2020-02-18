@@ -24,5 +24,5 @@ done
 echo ${#INTERFACES_ARRAY[@]}
 if [ 1 -eq  ${#INTERFACES_ARRAY[@]} ]
 then 
-    ip address show dev $INTERFACES_ARRAY
+    echo $INTERFACES_ARRAY
 fi
